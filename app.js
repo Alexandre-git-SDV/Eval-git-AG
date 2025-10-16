@@ -25,9 +25,9 @@ function renderBooks() {
         renderBooks();
       }
 
-      const newauthor2 = prompt("Entrez le nouvel auteur :", book.author);
-      while (newauthor2) {
-        book.author = newauthor2;
+      const newauthor = prompt("Entrez le nouvel auteur :", book.author);
+      while (newauthor) {
+        book.author = newauthor;
         renderBooks();
       }
     };
