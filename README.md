@@ -44,3 +44,14 @@ runs-on: ubuntu-latest -> Fait le test sur ubuntu
 needs: [build-exemple] -> à besoin du jobs précédent nommé "build-exemple"
 
 steps: -> Les étapes a réalisé lors du respect des exigences précédentes
+
+
+---
+
+## 💡 Mes contributions GitHub | My GitHub Contributions
+
+<p align="center">
+  <img src="https://ghchart.rshah.org/ff3434/Alexandre-git-SDV" alt="Alexandre's Github contribution graph" />
+</p>
+
+---
