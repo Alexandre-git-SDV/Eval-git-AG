@@ -5,14 +5,19 @@ Pipeline CI/CD :
 
 ## Push sur la branche main et lors de la Pull request : 
 
+```bash
+
 on:
   push:
     branches:
       - main
+```
 
 ## Lors de la Pull request :
 
 Lance Jobs
+
+```bash
 
 jobs:
   build-exemple:
@@ -29,6 +34,8 @@ jobs:
     steps:
       - name: Test
         run: echo "Test effectué depuis la branche ${{ github.ref_name }}"
+
+```
 
 ## Lexique et explication
 
