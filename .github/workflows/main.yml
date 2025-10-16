@@ -1,0 +1,15 @@
+user-echo:
+    stage: build
+    script:
+        - echo "Hello, $GITHUB_USER_LOGIN"
+ 
+test-job:
+    stage: test
+    script:
+        - echo "Test en cours ..."
+        - python3 -c 'print("Test OK")'
+ 
+deploy-job:
+    stage: deploy
+    script:
+        - echo "Déploiement fictif effectué depuis la branche $CI_COMMIT_BRANCH"
