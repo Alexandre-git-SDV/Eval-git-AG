@@ -7,32 +7,16 @@ on:
   pull_request:
 
 jobs:
-  user-echo:
-    name: Afficher le nom de l'utilisateur
+  Build-exemple:
+    name: Build | Afficher le nom de l'utilisateur
     runs-on: ubuntu-latest
     steps:
       - name: Echo user login
         run: echo "Hello, ${{ github.actor }}"
 
   test:
-    name: Tests Python
+    name: Build | Test 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Installer Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Exemple de Test
-        run: |
-          echo "Test en cours ..."
-          python3 -c 'print("Test OK")'
-
-  deploy:
-    name: Déploiement fictif
-    runs-on: ubuntu-latest
-    steps:
-      - name: Déploiement
-        run: echo "Déploiement fictif effectué depuis la branche ${{ github.ref_name }}"
+      - name: Test
+        run: echo "Test effectué depuis la branche ${{ github.ref_name }}"
