@@ -10,5 +10,9 @@ const books = [
   {
     "title": "Les Misérables",
     "author": "Victor Hugo"
+  },
+  {
+    "title": "Cyprien fait des Livres",
+    "author": "Cyprien IOV"
   }
 ];
