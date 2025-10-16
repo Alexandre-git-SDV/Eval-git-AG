@@ -24,6 +24,12 @@ function renderBooks() {
         book.title = newtitle;
         renderBooks();
       }
+
+      const newauthor = prompt("Entrez le nouvel auteur :", book.author);
+      while (newauthor) {
+        book.author = newauthor;
+        renderBooks();
+      }
     };
     actionsTd.appendChild(editBtn);
 
