@@ -10,9 +10,5 @@ const books = [
   {
     "title": "Les Misérables",
     "author": "Victor Hugo"
-  },
-  {
-    "title": "Jojo's Bizarre Adventure Tome 1",
-    "author": "Hyrohyko Araki"
   }
 ];
